@@ -47,34 +47,38 @@
               </a>
               <ul class="dropdown-menu sectionBgColor fw-bold">
                 <li>
-                  <a class="dropdown-item text-white-50" href="#">Appetizers</a>
+                  <a class="dropdown-item nav-link text-white-50" href="#"
+                    >Appetizers</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item text-white-50" href="#"
+                  <a class="dropdown-item nav-link text-white-50" href="#"
                     >Main Courses</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item text-white-50" href="#"
+                  <a class="dropdown-item nav-link text-white-50" href="#"
                     >Pizza & Pasta</a
                   >
                 </li>
                 <li class="dropdown-divider bg-light"></li>
                 <li>
-                  <a class="dropdown-item text-white-50" href="#"
+                  <a class="dropdown-item nav-link text-white-50" href="#"
                     >Grill & BBQ</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item text-white-50" href="#"
+                  <a class="dropdown-item nav-link text-white-50" href="#"
                     >Salads & Healthy</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item text-white-50" href="#">Desserts</a>
+                  <a class="dropdown-item nav-link text-white-50" href="#"
+                    >Desserts</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item text-white-50" href="#"
+                  <a class="dropdown-item nav-link text-white-50" href="#"
                     >Drinks & Beverages</a
                   >
                 </li>
@@ -92,16 +96,83 @@
               class="form-control me-0 shadow-none sectionBgColor border borderLight"
               type="search"
               placeholder="Search"
-              aria-label="Search"
             />
+
             <button class="btn my-3 my-md-0 mx-md-3 btnGold focus-ring">
               Search
             </button>
-            <button class="btn btnBorderGold focus-ring">Login</button>
+
+            <button
+              type="button"
+              class="btn btnBorderGold focus-ring"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModalLogin"
+            >
+              Login
+            </button>
           </form>
         </div>
       </div>
     </nav>
+    <!-- Login Modal  -->
+    <div
+      class="modal fade"
+      id="exampleModalLogin"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content primaryBgColor">
+          <div class="modal-header borderLight">
+            <h2 class="modal-title fs-5 text-white" id="exampleModalLabel">
+              Login
+            </h2>
+            <button
+              class="ms-auto primaryBgColor border-0"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa-solid text-white fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control sectionBgColor borderLight mb-2"
+                id="floatingInput"
+                placeholder="Enter your email"
+              />
+              <label class="textSecondary" for="floatingInput"
+                >Email address</label
+              >
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control sectionBgColor borderLight mb-2"
+                id="floatingPassword"
+                placeholder="Enter your password"
+              />
+              <label class="textSecondary" for="floatingPassword"
+                >Password</label
+              >
+            </div>
+
+            <input type="checkbox" />
+            <label class="textSecondary ms-2">Remember me</label>
+          </div>
+          <div class="modal-footer borderLight">
+            <button type="button" class="btn btnGold" data-bs-dismiss="modal">
+              login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login Modal  -->
     <main>
       <div
         id="carouselExampleSlidesOnly"
@@ -273,7 +344,7 @@
         <div class="accordion-item border-0">
           <h2 class="accordion-header">
             <button
-              class="accordion-button shadowNone w-100 collapsed textSecondary sectionBgColor fs-5"
+              class="accordion-button shadow-none collapsed textSecondary sectionBgColor fs-5"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne"
@@ -298,10 +369,10 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item border-top border-bottom-0 borderLight">
+        <div class="accordion-item border-0">
           <h2 class="accordion-header">
             <button
-              class="accordion-button shadowNone w-100 collapsed textSecondary sectionBgColor fs-5"
+              class="accordion-button shadow-none collapsed textSecondary sectionBgColor fs-5"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseTwo"
@@ -326,10 +397,10 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item border-top border-bottom-0 borderLight">
+        <div class="accordion-item border-0">
           <h2 class="accordion-header">
             <button
-              class="accordion-button shadowNone w-100 collapsed textSecondary sectionBgColor fs-5"
+              class="accordion-button shadow-none collapsed textSecondary sectionBgColor fs-5"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseThree"
@@ -408,11 +479,17 @@
                     type="time"
                     class="form-control sectionBgColor borderLight mb-2"
                   />
-                  <input
-                    type="number"
-                    class="form-control sectionBgColor borderLight"
-                    placeholder="Guests"
-                  />
+                  <div class="form-floating">
+                    <input
+                      type="number"
+                      class="form-control sectionBgColor borderLight"
+                      placeholder="Guests"
+                      id="inputNumber"
+                    />
+                    <label class="textSecondary" for="inputNumber"
+                      >Guests</label
+                    >
+                  </div>
                 </div>
                 <div class="modal-footer borderLight">
                   <button
@@ -426,11 +503,18 @@
               </div>
             </div>
           </div>
-          <textarea
-            rows="5"
-            class="w-100 rounded-3 sectionBgColor p-3"
-            placeholder="Write your reservation details (date, time, number of guests)..."
-          ></textarea>
+          <div class="form-floating">
+            <textarea
+              class="form-control rounded-3 sectionBgColor"
+              style="height: 130px"
+              placeholder="Write your reservation details (date, time, number of guests)..."
+              id="textareaReservation"
+            ></textarea>
+            <label class="textSecondary" for="textareaReservation"
+              >Write your reservation details (date, time, number of
+              guests)...</label
+            >
+          </div>
         </div>
       </div>
       <hr />
@@ -477,11 +561,17 @@
                 </div>
                 <div class="modal-body">
                   <p class="small textSecondary">Tell us your request</p>
-                  <input
-                    type="text"
-                    class="form-control mb-2 sectionBgColor borderLight"
-                    placeholder="Phone or Email"
-                  />
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control mb-2 sectionBgColor borderLight"
+                      placeholder="Phone or Email"
+                      id="inputPhoneOrEmail"
+                    />
+                    <label class="textSecondary" for="inputPhoneOrEmail"
+                      >Phone or Email</label
+                    >
+                  </div>
                 </div>
                 <div class="modal-footer borderLight">
                   <button
@@ -495,11 +585,17 @@
               </div>
             </div>
           </div>
-          <textarea
-            rows="5"
-            class="w-100 p-3 rounded-3 sectionBgColor"
-            placeholder="Tell us about allergies, special meals, or occasions..."
-          ></textarea>
+          <div class="form-floating">
+            <textarea
+              class="form-control rounded-3 sectionBgColor"
+              style="height: 130px"
+              placeholder="Tell us about allergies, special meals, or occasions..."
+              id="textareaRequest"
+            ></textarea>
+            <label class="textSecondary" for="textareaRequest">
+              Tell us about allergies, special meals, or occasions...
+            </label>
+          </div>
         </div>
       </div>
       <hr />
@@ -546,11 +642,20 @@
                 </div>
                 <div class="modal-body">
                   <p class="small textSecondary">Share your experience</p>
-                  <select class="form-select mb-2 sectionBgColor borderLight">
-                    <option>Excellent</option>
-                    <option>Good</option>
-                    <option>Average</option>
-                  </select>
+                  <div class="form-floating">
+                    <select
+                      class="form-select sectionBgColor borderLight"
+                      aria-label="Floating label select example"
+                      id="selectRating"
+                    >
+                      <option>Excellent</option>
+                      <option>Good</option>
+                      <option>Average</option>
+                    </select>
+                    <label class="textSecondary" for="selectRating"
+                      >Rating</label
+                    >
+                  </div>
                 </div>
                 <div class="modal-footer borderLight">
                   <button
@@ -564,11 +669,17 @@
               </div>
             </div>
           </div>
-          <textarea
-            rows="5"
-            class="w-100 p-3 rounded-3 sectionBgColor"
-            placeholder="Share your dining experience with us..."
-          ></textarea>
+          <div class="form-floating">
+            <textarea
+              class="form-control rounded-3 sectionBgColor"
+              style="height: 130px"
+              placeholder="Share your dining experience with us..."
+              id="textareaFeedback"
+            ></textarea>
+            <label class="textSecondary" for="textareaFeedback"
+              >Share your dining experience with us...</label
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -583,7 +694,7 @@
       <div class="container">
         <div class="row g-3 justify-content-center">
           <div class="col-md-6 col-lg-4">
-            <div class="card position-relative p-2">
+            <div class="card sectionBgColor position-relative p-2">
               <img
                 src="images/PremiumGrilledSteak.jpeg"
                 class="card-img-top"
@@ -602,7 +713,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="card position-relative p-2">
+            <div class="card sectionBgColor position-relative p-2">
               <img
                 src="images/ChickenAlfredoPasta.jpeg"
                 class="card-img-top"
@@ -621,7 +732,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="card position-relative p-2">
+            <div class="card sectionBgColor position-relative p-2">
               <img
                 src="images/SeafoodPlatter.jpeg"
                 class="card-img-top"
@@ -640,7 +751,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="card position-relative p-2">
+            <div class="card sectionBgColor position-relative p-2">
               <img
                 src="images/GourmetBeefBurger.jpeg"
                 class="card-img-top"
@@ -659,7 +770,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="card position-relative p-2">
+            <div class="card sectionBgColor position-relative p-2">
               <img
                 src="images/WoodFiredPizza.jpeg"
                 class="card-img-top"
@@ -678,7 +789,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="card position-relative p-2">
+            <div class="card sectionBgColor position-relative p-2">
               <img
                 src="images/PremiumChickenShawarmaPlate.jpeg"
                 class="card-img-top"
@@ -699,7 +810,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="card position-relative p-2">
+            <div class="card sectionBgColor position-relative p-2">
               <img
                 src="images/PremiumSushiPlatter.jpeg"
                 class="card-img-top"
@@ -718,7 +829,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="card position-relative p-2">
+            <div class="card sectionBgColor position-relative p-2">
               <img
                 src="images/ChocolateLavaCheesecake.jpeg"
                 class="card-img-top"
@@ -752,9 +863,7 @@
       <div class="container">
         <div class="row d-flex justify-content-between g-3 g-md-5 py-4 px-xl-5">
           <div class="col-md-6 col-lg-4">
-            <div
-              class="card rounded-4 overflow-hidden mx-auto border borderLight"
-            >
+            <div class="card overflow-hidden mx-auto">
               <img
                 src="images/chef.png"
                 class="card-img img-fluid h-100"
@@ -776,9 +885,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div
-              class="card rounded-4 overflow-hidden mx-auto border borderLight"
-            >
+            <div class="card overflow-hidden mx-auto">
               <img
                 src="images/waiter.png"
                 class="card-img img-fluid h-100"
@@ -801,9 +908,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div
-              class="card rounded-4 overflow-hidden mx-auto border borderLight"
-            >
+            <div class="card overflow-hidden mx-auto">
               <img
                 src="images/manager.png"
                 class="card-img img-fluid h-100"
@@ -820,7 +925,7 @@
                   <img src="images/manager.png" class="w-100" alt="..." />
                 </div>
                 <p class="card-text mb-1 textSecondary">Mr. Mohamed Adel</p>
-                <p class="card-text secondaryColor fw-bolder">Manage</p>
+                <p class="card-text secondaryColor fw-bolder">Manager</p>
               </div>
             </div>
           </div>
@@ -830,14 +935,15 @@
     <section class="news my-5">
       <h2 class="text-center text-white">News</h2>
       <div class="container-fluid container-xl px-md-3 px-xl-5 mt-4">
-        <div class="card mb-3 w-100">
+        <div class="card sectionBgColor mb-3 w-100">
           <div class="row g-0 h-100">
             <div class="col-md-8 order-2 order-md-1">
               <div class="card-body h-100 d-flex flex-column">
                 <h3 class="card-title fst-italic text-white">
                   Smoked Gold Steak
                 </h3>
-                <span class="pb-2 mb-3 d-inline-block textSecondary"
+                <span
+                  class="pb-2 mb-3 btn border-0 border-bottom borderLight textSecondary"
                   >• April 2024</span
                 >
                 <p class="card-text textSecondary">
@@ -854,7 +960,7 @@
                 </p>
                 <div class="mt-auto mb-1">
                   <a href="#" class="btn btnGold">View Dish</a>
-                  <a href="#" class="btn btnGold">Ingredients</a>
+                  <a href="#" class="btn btnGold mx-2">Ingredients</a>
                   <a href="#" class="btn btnBorderGold">Order Now</a>
                 </div>
               </div>
@@ -877,14 +983,15 @@
             </div>
           </div>
         </div>
-        <div class="card mb-3 w-100">
+        <div class="card sectionBgColor mb-3 w-100">
           <div class="row g-0 h-100">
             <div class="col-md-8 order-2">
               <div class="card-body h-100 d-flex flex-column">
                 <h3 class="card-title fst-italic text-white">
                   Midnight Truffle Pasta
                 </h3>
-                <span class="pb-2 mb-3 d-inline-block textSecondary"
+                <span
+                  class="pb-2 mb-3 btn border-0 border-bottom borderLight textSecondary"
                   >• June 2024</span
                 >
                 <p class="card-text textSecondary">
@@ -900,7 +1007,7 @@
                 </p>
                 <div class="mt-auto mb-1">
                   <a href="#" class="btn btnGold">View Dish</a>
-                  <a href="#" class="btn btnGold">Ingredients</a>
+                  <a href="#" class="btn btnGold mx-2">Ingredients</a>
                   <a href="#" class="btn btnBorderGold">Order Now</a>
                 </div>
               </div>
@@ -923,14 +1030,15 @@
             </div>
           </div>
         </div>
-        <div class="card mb-3 w-100">
+        <div class="card sectionBgColor mb-3 w-100">
           <div class="row g-0 h-100">
             <div class="col-md-8 order-2 order-md-1">
               <div class="card-body h-100 d-flex flex-column">
                 <h3 class="card-title fst-italic text-white">
                   Ocean Ember Salmon
                 </h3>
-                <span class="pb-2 mb-3 d-inline-block textSecondary"
+                <span
+                  class="pb-2 mb-3 btn border-0 border-bottom borderLight textSecondary"
                   >• August 2024</span
                 >
                 <p class="card-text textSecondary">
@@ -946,7 +1054,7 @@
                 </p>
                 <div class="mt-auto mb-1">
                   <a href="#" class="btn btnGold">View Dish</a>
-                  <a href="#" class="btn btnGold">Ingredients</a>
+                  <a href="#" class="btn btnGold mx-2">Ingredients</a>
                   <a href="#" class="btn btnBorderGold">Order Now</a>
                 </div>
               </div>
@@ -969,14 +1077,15 @@
             </div>
           </div>
         </div>
-        <div class="card mb-3 w-100">
+        <div class="card sectionBgColor mb-3 w-100">
           <div class="row g-0 h-100">
             <div class="col-md-8 order-2">
               <div class="card-body h-100 d-flex flex-column">
                 <h3 class="card-title fst-italic text-white">
                   Velvet Eclipse Dessert
                 </h3>
-                <span class="pb-2 mb-3 d-inline-block textSecondary"
+                <span
+                  class="pb-2 mb-3 btn border-0 border-bottom borderLight textSecondary"
                   >• October 2024</span
                 >
                 <p class="card-text textSecondary">
@@ -991,7 +1100,7 @@
                 </p>
                 <div class="mt-auto mb-1">
                   <a href="#" class="btn btnGold">View Dish</a>
-                  <a href="#" class="btn btnGold">Ingredients</a>
+                  <a href="#" class="btn btnGold mx-2">Ingredients</a>
                   <a href="#" class="btn btnBorderGold">Order Now</a>
                 </div>
               </div>
@@ -1018,57 +1127,57 @@
     </section>
     <section class="subscribe my-5">
       <div class="container">
-        <div class="row d-flex justify-content-evenly g-3 g-md-5 py-4 px-xl-5">
+        <div class="row d-flex justify-content-evenly">
           <div class="col-md-6 col-lg-3">
             <div
-              class="border border-1 borderLight py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
+              class="cardLink py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
             >
-              <h3 class="fs-5 text-white">Subscribe Now</h3>
+              <h3 class="fs-4 text-white">Subscribe Now</h3>
               <img
                 src="images/whatsapp.png"
                 alt="..."
                 class="my-4 w-50 rounded-5"
               />
-              <a href="#" class="secondaryColor fs-5">Link</a>
+              <a href="#" class="secondaryColor fs-4">Subscribe</a>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div
-              class="border border-1 borderLight py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
+              class="cardLink py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
             >
-              <h3 class="fs-5 text-white">Subscribe Now</h3>
+              <h3 class="fs-4 text-white">Subscribe Now</h3>
               <img
                 src="images/instagram.png"
                 alt="..."
                 class="my-4 w-50 rounded-5"
               />
-              <a href="#" class="secondaryColor fs-5">Link</a>
+              <a href="#" class="secondaryColor fs-4">Subscribe</a>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div
-              class="border border-1 borderLight py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
+              class="cardLink py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
             >
-              <h3 class="fs-5 text-white">Subscribe Now</h3>
+              <h3 class="fs-4 text-white">Subscribe Now</h3>
               <img
                 src="images/linkedin.png"
                 alt="..."
                 class="my-4 w-50 rounded-5"
               />
-              <a href="#" class="secondaryColor fs-5">Link</a>
+              <a href="#" class="secondaryColor fs-4">Subscribe</a>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div
-              class="border border-1 borderLight py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
+              class="cardLink py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
             >
-              <h3 class="fs-5 text-white">Subscribe Now</h3>
+              <h3 class="fs-4 text-white">Subscribe Now</h3>
               <img
                 src="images/twitter.png"
                 alt="..."
                 class="my-4 w-50 rounded-5"
               />
-              <a href="#" class="secondaryColor fs-5">Link</a>
+              <a href="#" class="secondaryColor fs-4">Subscribe</a>
             </div>
           </div>
         </div>
@@ -1079,25 +1188,19 @@
       <div class="container-fluid container-lg text-center">
         <div class="row d-none d-md-flex">
           <div class="col-md-4">
-            <div
-              class="border borderLight sectionBgColor py-4 rounded-2 w-50 mx-auto"
-            >
+            <div class="cardIcon sectionBgColor py-4 rounded-2 w-50 mx-auto">
               <img src="images/location.png" style="width: 100px" alt="" />
               <h3 class="fs-5 mt-2 secondaryColor">Location</h3>
             </div>
           </div>
           <div class="col-md-4">
-            <div
-              class="border borderLight sectionBgColor py-4 rounded-2 w-50 mx-auto"
-            >
+            <div class="cardIcon sectionBgColor py-4 rounded-2 w-50 mx-auto">
               <img src="images/phone.png" style="width: 100px" alt="" />
               <h3 class="fs-5 mt-2 secondaryColor">Contact</h3>
             </div>
           </div>
           <div class="col-md-4">
-            <div
-              class="border borderLight sectionBgColor py-4 rounded-2 w-50 mx-auto"
-            >
+            <div class="cardIcon sectionBgColor py-4 rounded-2 w-50 mx-auto">
               <img src="images/clock.png" style="width: 100px" alt="" />
               <h3 class="fs-5 mt-2 secondaryColor">Opening Hours</h3>
             </div>
@@ -1129,8 +1232,10 @@
         </div>
         <div class="row d-block d-md-none px-4">
           <div>
-            <img src="images/location.png" style="width: 130px" alt="" />
-            <h3 class="fs-5 mt-2 secondaryColor">Location</h3>
+            <div class="sectionBgColor w-50 mx-auto py-3 cardIcon">
+              <img src="images/location.png" style="width: 130px" alt="" />
+              <h3 class="fs-5 mt-2 secondaryColor">Location</h3>
+            </div>
             <ul class="list-unstyled lh-lg border-bottom borderLight py-3">
               <li class="textSecondary">Downtown Street</li>
               <li class="textSecondary">Cairo, Egypt</li>
@@ -1138,8 +1243,10 @@
             </ul>
           </div>
           <div>
-            <img src="images/phone.png" style="width: 130px" alt="" />
-            <h3 class="fs-5 mt-2 secondaryColor">Contact</h3>
+            <div class="sectionBgColor w-50 mx-auto py-3 cardIcon">
+              <img src="images/phone.png" style="width: 130px" alt="" />
+              <h3 class="fs-5 mt-2 secondaryColor">Contact</h3>
+            </div>
             <ul class="list-unstyled lh-lg border-bottom borderLight py-3">
               <li class="textSecondary">+20 123 456 789</li>
               <li class="textSecondary">WhatsApp Available</li>
@@ -1147,9 +1254,11 @@
             </ul>
           </div>
           <div>
-            <img src="images/clock.png" style="width: 130px" alt="" />
-            <h3 class="fs-5 mt-2 secondaryColor">Opening Hours</h3>
-            <ul class="list-unstyled lh-lg">
+            <div class="sectionBgColor w-50 mx-auto py-3 cardIcon">
+              <img src="images/clock.png" style="width: 130px" alt="" />
+              <h3 class="fs-5 mt-2 secondaryColor">Opening Hours</h3>
+            </div>
+            <ul class="list-unstyled lh-lg py-3">
               <li class="textSecondary">Daily</li>
               <li class="textSecondary">10:00 AM</li>
               <li class="textSecondary">12:00 AM</li>
@@ -1158,7 +1267,7 @@
         </div>
       </div>
       <hr />
-      <p class="text-center text-white">
+      <p class="text-center text-white px-3">
         &copy;2025 FoodExpress. All Rights Reserved. Designed By Eng/ Mohamed
         Haitham
       </p>

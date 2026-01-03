@@ -4,11 +4,9 @@
   box-sizing: border-box;
   transition: 0.3s;
 }
-
 :root {
   --primary: #0f172a;
   --secondary: #c9a227;
-  /* --section: #111821; */
   --section: #111827;
   --textPrimary: #f8fafc;
   --textSecondary: #cbd5e188;
@@ -17,29 +15,24 @@ body {
   background-color: var(--primary);
 }
 .primaryBgColor {
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
 }
 .secondaryColor {
-  color: var(--secondary);
+  color: var(--secondary) !important;
 }
 .secondaryBgColor {
-  background-color: var(--secondary);
+  background-color: var(--secondary) !important;
 }
 .sectionBgColor {
-  background-color: var(--section);
+  background-color: var(--section) !important;
 }
 .textPrimary {
-  color: var(--textPrimary);
+  color: var(--textPrimary) !important;
 }
 .textSecondary {
-  color: var(--textSecondary);
+  color: var(--textSecondary) !important;
 }
-
 /* ////////////////////////////////////////////////////////////////////////////////////// */
-
-/* body {
-  background-color: #0b1220;
-} */
 hr {
   border-color: rgba(226, 226, 226, 0.5);
 }
@@ -69,9 +62,6 @@ hr {
 .focus-ring:focus {
   box-shadow: 0 0 4px 2px var(--secondary) !important ;
 }
-.shadowNone {
-  box-shadow: none !important;
-}
 .clip1 {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
 }
@@ -83,27 +73,43 @@ hr {
   border-radius: 50%;
   width: 40%;
   margin-left: -5%;
-
 }
 /* ------------------------------------------------------------------------------------ */
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-nav .dropdown-item {
+ border: 1px solid transparent;
+ border-radius: 5px;
+ transition: .3s linear;
+}
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .dropdown-item:hover {
   color: white !important;
   background-color: transparent !important;
 }
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .dropdown-item:focus {
+  border: 1px solid var(--textSecondary);
+}
 .navbar .navbar-toggler:focus {
   box-shadow: none;
 }
+label::after {
+  background-color: transparent !important;
+}
 input[type="search"],
+input[type="email"],
+input[type="password"],
 input[type="date"],
 input[type="time"],
 input[type="number"],
 input[type="text"],
 select.form-select,
 textarea {
-  color: var(--textSecondary);
+  color: var(--textSecondary) !important;
 }
 input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
 input[type="text"]:focus,
 input[type="date"]:focus,
 input[type="time"]:focus,
@@ -112,10 +118,12 @@ select.form-select:focus,
 textarea:focus {
   background-color: var(--section);
   color: var(--textSecondary);
-  box-shadow: none;
-  outline: none;
+  box-shadow: none !important;
+  outline: none !important;
 }
 input[type="search"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
 input[type="text"]::placeholder,
 input[type="date"]::placeholder,
 input[type="time"]::placeholder,
@@ -125,11 +133,9 @@ textarea::placeholder {
   color: var(--textSecondary);
 }
 /* ------------------------------------------------------------ */
-main,
 main .carousel .carousel-inner .carousel-item img {
   min-height: clamp(50vh, 70vh, 100vh);
 }
-
 main .carousel .carousel-inner .carousel-item .carousel-caption {
   background-color: #00000098;
 }
@@ -140,71 +146,85 @@ main .carousel .carousel-inner .carousel-item .carousel-caption {
   background-color: rgba(255, 255, 255, 0);
   color: white !important;
 }
-.card {
-  background: rgba(17, 24, 39, 0.8);
-  border: 1px solid rgba(52, 109, 194, 0.3);
+textarea,
+.card,
+.cardLink,
+.cardIcon {
+  border: 1px solid rgba(52, 109, 194, 0.3) !important;
   border-radius: 16px;
   backdrop-filter: blur(12px);
-  box-shadow: 0 0 30px rgba(33, 97, 194, 0.15);
+  box-shadow: 2px 5px 5px rgba(33, 97, 194, 0.15);
 }
-
 /* ------------------------------------------------------------ */
-.accordion-button:not(.collapsed) {
-  background-color: var(--section);
-  color: white;
+.accordion-button {
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
 }
 .accordion-button:focus {
-  background-color: var(--section);
-  color: var(--secondary);
-}
-.accordion-button:focus::after {
   color: var(--secondary) !important;
 }
-
 /* ------------------------------------------------------------ */
-/* ------------------------------------------------------------ */
-
 .background div {
   background: url("../images/background.jpeg") no-repeat fixed center;
   background-size: cover;
   height: 50vh;
 }
-/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+.popular .card::before,
+.popular .card::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(33, 97, 194, 0.15);
+  opacity: 0.5;
+  width: 0;
+  height: 0;
+  transition: 0.7s;
+  overflow: hidden;
+}
+.popular .card::before {
+  top: 0;
+  left: 0;
+}
+.popular .card::after {
+  bottom: 0;
+  right: 0;
+}
+.popular .card:hover::before,
+.popular .card:hover::after {
+  width: 100%;
+  height: 100%;
+}
+/* ------------------------------------------------------------------ */
+.team .card {
+  transform: scale(1);
+  transition: 0.3s linear;
+  border: 1px solid rgba(0, 33, 82, 0.863) !important;
+}
+.team .card:hover {
+  transform: scale(0.95);
+}
+.team .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* ------------------------------------------------------------------ */
+.news .card img {
+  transform: scale(1);
+  transition: 0.5s linear;
+}
+.news .card:hover img {
+  transform: scale(1.1);
+}
+/* ------------------------------------------------------------------ */
 
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
-/* ------------------------------------------------------------ */
-/* ------------------------------------------------------------ */
+.subscribe .cardLink {
+  transform: scale(0.7);
+  transition: 0.3s linear;
+}
+.subscribe .cardLink:hover {
+  transform: scale(0.75);
+}
+/* ------------------------------------------------------------------ */
 @media (min-width: 992px) {
   main,
   main .carousel .carousel-inner .carousel-item {
@@ -212,12 +232,5 @@ main .carousel .carousel-inner .carousel-item .carousel-caption {
   }
   main .carousel .carousel-inner .carousel-item .carousel-caption {
     width: 50%;
-  }
-}
-
-@media (max-width: 500px) {
-  main .carousel .carousel-inner .carousel-item img {
-    width: 150% !important;
-    transform: translateX(-25%);
   }
 }
