@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+:root {
+  --primary: #0f172a;
+  --secondary: #c9a227;
+  /* --section: #111821; */
+  --section: #111827;
+  --textPrimary: #f8fafc;
+  --textSecondary: #cbd5e188;
+}
+body {
+  background-color: var(--primary);
+}
+.primaryBgColor {
+  background-color: var(--primary);
+}
+.secondaryColor {
+  color: var(--secondary);
+}
+.secondaryBgColor {
+  background-color: var(--secondary);
+}
+.sectionBgColor {
+  background-color: var(--section);
+}
+.textPrimary {
+  color: var(--textPrimary);
+}
+.textSecondary {
+  color: var(--textSecondary);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+/* body {
+  background-color: #0b1220;
+} */
+hr {
+  border-color: rgba(226, 226, 226, 0.5);
+}
+.btn {
+  box-shadow: none !important;
+  width: fit-content;
+}
+.btnBorderGold {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+.btnBorderGold:hover {
+  background-color: var(--secondary) !important;
+  color: var(--primary) !important;
+}
+.btnGold {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+.btnGold:hover {
+  background-color: #c9a327bd !important;
+  color: var(--primary) !important;
+}
+.borderLight {
+  border-color: rgba(226, 226, 226, 0.5) !important;
+}
+.focus-ring:focus {
+  box-shadow: 0 0 4px 2px var(--secondary) !important ;
+}
+.shadowNone {
+  box-shadow: none !important;
+}
+.clip1 {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
+}
+.clip2 {
+  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+}
+.clipImg {
+  clip-path: polygon(10% 0, 90% 0%, 90% 100%, 10% 100%);
+  border-radius: 50%;
+  width: 40%;
+  margin-left: -5%;
+
+}
+/* ------------------------------------------------------------------------------------ */
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .dropdown-item:hover {
+  color: white !important;
+  background-color: transparent !important;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+input[type="search"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="text"],
+select.form-select,
+textarea {
+  color: var(--textSecondary);
+}
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus,
+select.form-select:focus,
+textarea:focus {
+  background-color: var(--section);
+  color: var(--textSecondary);
+  box-shadow: none;
+  outline: none;
+}
+input[type="search"]::placeholder,
+input[type="text"]::placeholder,
+input[type="date"]::placeholder,
+input[type="time"]::placeholder,
+input[type="number"]::placeholder,
+select.form-select::placeholder,
+textarea::placeholder {
+  color: var(--textSecondary);
+}
+/* ------------------------------------------------------------ */
+main,
+main .carousel .carousel-inner .carousel-item img {
+  min-height: clamp(50vh, 70vh, 100vh);
+}
+
+main .carousel .carousel-inner .carousel-item .carousel-caption {
+  background-color: #00000098;
+}
+.links {
+  z-index: 5;
+}
+.links svg:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white !important;
+}
+.card {
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(52, 109, 194, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(33, 97, 194, 0.15);
+}
+
+/* ------------------------------------------------------------ */
+.accordion-button:not(.collapsed) {
+  background-color: var(--section);
+  color: white;
+}
+.accordion-button:focus {
+  background-color: var(--section);
+  color: var(--secondary);
+}
+.accordion-button:focus::after {
+  color: var(--secondary) !important;
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+.background div {
+  background: url("../images/background.jpeg") no-repeat fixed center;
+  background-size: cover;
+  height: 50vh;
+}
+/* ------------------------------------------------------------ */
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+@media (min-width: 992px) {
+  main,
+  main .carousel .carousel-inner .carousel-item {
+    height: 100vh !important;
+  }
+  main .carousel .carousel-inner .carousel-item .carousel-caption {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  main .carousel .carousel-inner .carousel-item img {
+    width: 150% !important;
+    transform: translateX(-25%);
+  }
+}

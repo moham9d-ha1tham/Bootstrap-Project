@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top primaryBgColor">
+      <div class="container-fluid">
+        <a class="navbar-brand px-3 py-1 rounded-3" href="#"
+          ><img class="" style="width: 80px" src="images/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler btnBorderGold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars nav-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white-50 dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu sectionBgColor fw-bold">
+                <li>
+                  <a class="dropdown-item text-white-50" href="#">Appetizers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white-50" href="#"
+                    >Main Courses</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white-50" href="#"
+                    >Pizza & Pasta</a
+                  >
+                </li>
+                <li class="dropdown-divider bg-light"></li>
+                <li>
+                  <a class="dropdown-item text-white-50" href="#"
+                    >Grill & BBQ</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white-50" href="#"
+                    >Salads & Healthy</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white-50" href="#">Desserts</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white-50" href="#"
+                    >Drinks & Beverages</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white-50">Applications</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white-50">Services</a>
+            </li>
+          </ul>
+          <form class="d-flex flex-column flex-md-row" role="search">
+            <input
+              class="form-control me-0 shadow-none sectionBgColor border borderLight"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn my-3 my-md-0 mx-md-3 btnGold focus-ring">
+              Search
+            </button>
+            <button class="btn btnBorderGold focus-ring">Login</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators mb-43">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img
+              class="d-block w-100 h-100"
+              src="images/carousel-1.jpeg"
+              alt="carouselImage"
+            />
+            <div
+              class="carousel-caption py-4 mb-4 m-auto rounded-4 border borderLight"
+            >
+              <h5>Restaurant Manager</h5>
+              <p class="textSecondary">
+                Ensuring a refined dining experience through attentive service,
+                organization, and guest satisfaction.
+              </p>
+              <button class="btn btnBorderGold focus-ring">Learn More</button>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="images/carousel-2.jpeg"
+              class="d-block w-100 h-100"
+              alt="carouselImage"
+            />
+            <div
+              class="carousel-caption py-4 mb-4 m-auto rounded-4 border borderLight"
+            >
+              <h5>Professional Service Team</h5>
+              <p class="textSecondary">
+                A trained staff dedicated to delivering polite, efficient, and
+                seamless service in a calm atmosphere.
+              </p>
+              <button class="btn btnBorderGold focus-ring">Learn More</button>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="images/carousel-3.jpeg"
+              class="d-block w-100 h-100"
+              alt="carouselImage"
+            />
+            <div
+              class="carousel-caption py-4 mb-4 m-auto rounded-4 border borderLight"
+            >
+              <h5>Executive Chef</h5>
+              <p class="textSecondary">
+                Crafting each dish with precision, passion, and carefully
+                selected ingredients for exceptional quality.
+              </p>
+              <button class="btn btnBorderGold focus-ring">Learn More</button>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="images/carousel-4.jpeg"
+              class="d-block w-100 h-100"
+              alt="carouselImage"
+            />
+            <div
+              class="carousel-caption py-4 mb-4 m-auto rounded-4 border borderLight"
+            >
+              <h5>Front Desk & Cashier</h5>
+              <p class="textSecondary">
+                Providing smooth, friendly, and accurate service to ensure a
+                comfortable guest experience.
+              </p>
+              <button class="btn btnBorderGold focus-ring">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide="prev"
+        >
+          <i class="fa-solid fa-angle-left text-white fs-1 rounded-3"></i>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide="next"
+        >
+          <i class="fa-solid fa-angle-right text-white fs-1 rounded-3"></i>
+        </button>
+      </div>
+      <ul
+        class="list-unstyled links position-fixed end-0 me-4 top-50 translate-middle-y fs-2"
+      >
+        <li class="mb-4">
+          <a href="#">
+            <i class="fab fa-facebook secondaryColor rounded-3 fs-3 p-1"> </i>
+          </a>
+        </li>
+        <li class="mb-4">
+          <a href="#"
+            ><i class="fab fa-twitter secondaryColor rounded-3 fs-3 p-1"> </i
+          ></a>
+        </li>
+        <li class="mb-4">
+          <a href="#"
+            ><i class="fab fa-whatsapp secondaryColor rounded-3 fs-3 p-1"> </i
+          ></a>
+        </li>
+        <li class="mb-4">
+          <a href="#"
+            ><i class="fab fa-linkedin secondaryColor rounded-3 fs-3 p-1"> </i
+          ></a>
+        </li>
+        <li class="mb-4">
+          <a href="#"
+            ><i class="fab fa-instagram secondaryColor rounded-3 fs-3 p-1"> </i
+          ></a>
+        </li>
+      </ul>
+    </main>
+    <section>
+      <div class="welcome container-fluid py-4 mb-3">
+        <h2 class="text-white">Welcome</h2>
+        <article class="my-3 textSecondary">
+          Welcome to a place where fine dining meets calm elegance. Our
+          restaurant is built around the idea of offering more than just a meal
+          — we provide an experience defined by quality, comfort, and attention
+          to detail. From carefully prepared dishes to a peaceful atmosphere,
+          every element is designed to make you feel relaxed and welcomed.
+        </article>
+        <button class="btn btnBorderGold focus-ring">Learn More</button>
+      </div>
+      <hr />
+      <div class="fst-italic text-center fs-1 py-5 mb-3">
+        <h2 class="text-white">Why Choose Our Restaurant</h2>
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button shadowNone w-100 collapsed textSecondary sectionBgColor fs-5"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Crafted With Passion
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body textSecondary sectionBgColor">
+              Every dish is created with genuine passion and attention to
+              detail. Our chefs carefully select high-quality ingredients and
+              apply refined techniques to bring out balanced flavors and elegant
+              presentation. Each plate reflects our commitment to consistency,
+              quality, and an exceptional dining experience from the first bite
+              to the last.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-top border-bottom-0 borderLight">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button shadowNone w-100 collapsed textSecondary sectionBgColor fs-5"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              A Calm & Elegant Atmosphere
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body textSecondary sectionBgColor">
+              We believe that a great meal deserves a peaceful and welcoming
+              environment. Our restaurant is designed with soft lighting,
+              refined colors, and a thoughtfully arranged space that encourages
+              relaxation. The calm atmosphere allows guests to enjoy meaningful
+              moments, comfortable conversations, and a truly refined dining
+              experience.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-top border-bottom-0 borderLight">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button shadowNone w-100 collapsed textSecondary sectionBgColor fs-5"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Exceptional Service
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body textSecondary sectionBgColor">
+              Our service philosophy is built around respect, attentiveness, and
+              professionalism. From the moment guests arrive, our team focuses
+              on understanding their needs and delivering seamless service with
+              care and precision. Every interaction is handled with warmth and
+              attention, ensuring a smooth and memorable visit.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section>
+      <div>
+        <div class="fst-italic text-center fs-1 py-4 mb-3">
+          <h2 class="text-white">Reserve Your Table</h2>
+        </div>
+        <div class="content container-fluid py-3">
+          <h5 class="textSecondary">
+            Plan your visit and enjoy a refined dining experience.
+          </h5>
+          <button
+            type="button"
+            class="btn mb-4 mt-2 btnBorderGold"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalOne"
+          >
+            Request Reservation
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModalOne"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content primaryBgColor">
+                <div class="modal-header borderLight">
+                  <h2
+                    class="modal-title fs-5 text-white"
+                    id="exampleModalLabel"
+                  >
+                    Table Reservation
+                  </h2>
+                  <button
+                    class="ms-auto primaryBgColor border-0"
+                    type="button"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa-solid text-white fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="small textSecondary">Reservation details</p>
+                  <input
+                    type="date"
+                    class="form-control sectionBgColor borderLight mb-2"
+                  />
+                  <input
+                    type="time"
+                    class="form-control sectionBgColor borderLight mb-2"
+                  />
+                  <input
+                    type="number"
+                    class="form-control sectionBgColor borderLight"
+                    placeholder="Guests"
+                  />
+                </div>
+                <div class="modal-footer borderLight">
+                  <button
+                    type="button"
+                    class="btn btnGold"
+                    data-bs-dismiss="modal"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <textarea
+            rows="5"
+            class="w-100 rounded-3 sectionBgColor p-3"
+            placeholder="Write your reservation details (date, time, number of guests)..."
+          ></textarea>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <div class="fst-italic text-center fs-1 py-4 mb-3">
+          <h2 class="text-white">Special Requests</h2>
+        </div>
+        <div class="content container-fluid py-3">
+          <h5 class="textSecondary">
+            Let us know how we can personalize your experience.
+          </h5>
+          <button
+            type="button"
+            class="btn mb-4 mt-2 btnBorderGold"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalTwo"
+          >
+            Send Request
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModalTwo"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content primaryBgColor">
+                <div class="modal-header borderLight">
+                  <h2
+                    class="modal-title fs-5 text-white"
+                    id="exampleModalLabel"
+                  >
+                    Special Request
+                  </h2>
+                  <button
+                    class="ms-auto primaryBgColor border-0"
+                    type="button"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa-solid text-white fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="small textSecondary">Tell us your request</p>
+                  <input
+                    type="text"
+                    class="form-control mb-2 sectionBgColor borderLight"
+                    placeholder="Phone or Email"
+                  />
+                </div>
+                <div class="modal-footer borderLight">
+                  <button
+                    type="button"
+                    class="btn btnGold"
+                    data-bs-dismiss="modal"
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <textarea
+            rows="5"
+            class="w-100 p-3 rounded-3 sectionBgColor"
+            placeholder="Tell us about allergies, special meals, or occasions..."
+          ></textarea>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <div class="fst-italic text-center fs-1 py-4 mb-3">
+          <h2 class="text-white">Your Experience Matters</h2>
+        </div>
+        <div class="content container-fluid py-3">
+          <h5 class="textSecondary">
+            Your feedback helps us improve and serve you better.
+          </h5>
+          <button
+            type="button"
+            class="btn mb-4 mt-2 btnBorderGold"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Submit Feedback
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content primaryBgColor">
+                <div class="modal-header borderLight">
+                  <h2
+                    class="modal-title text-white fs-5"
+                    id="exampleModalLabel"
+                  >
+                    Rate Your Experience
+                  </h2>
+                  <button
+                    class="ms-auto primaryBgColor border-0"
+                    type="button"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa-solid text-white fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="small textSecondary">Share your experience</p>
+                  <select class="form-select mb-2 sectionBgColor borderLight">
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                  </select>
+                </div>
+                <div class="modal-footer borderLight">
+                  <button
+                    type="button"
+                    class="btn btnGold"
+                    data-bs-dismiss="modal"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <textarea
+            rows="5"
+            class="w-100 p-3 rounded-3 sectionBgColor"
+            placeholder="Share your dining experience with us..."
+          ></textarea>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="background">
+      <div></div>
+    </section>
+    <section class="popular my-5">
+      <div class="fst-italic text-center fs-1 mb-5 mb-3 text-white">
+        <h2>Our Signature Dishes</h2>
+      </div>
+      <div class="container">
+        <div class="row g-3 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="card position-relative p-2">
+              <img
+                src="images/PremiumGrilledSteak.jpeg"
+                class="card-img-top"
+                alt="Machine Learning AI"
+              />
+              <div class="card-body position-relative z-2 flex-column">
+                <h5 class="card-title text-white">Premium Grilled Steak</h5>
+                <button class="btn ms-auto my-3 d-block btnGold">
+                  View Details
+                </button>
+                <p class="card-text textSecondary">
+                  Juicy grilled beef steak cooked to perfection, seasoned with
+                  fresh herbs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card position-relative p-2">
+              <img
+                src="images/ChickenAlfredoPasta.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body position-relative z-2 flex-column">
+                <h5 class="card-title text-white">Chicken Alfredo Pasta</h5>
+                <button class="btn ms-auto my-3 d-block btnGold">
+                  View Details
+                </button>
+                <p class="card-text textSecondary">
+                  Creamy Alfredo sauce blended with tender grilled chicken and
+                  perfectly cooked pasta.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card position-relative p-2">
+              <img
+                src="images/SeafoodPlatter.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body position-relative z-2 flex-column">
+                <h5 class="card-title text-white">Seafood Platter</h5>
+                <button class="btn ms-auto my-3 d-block btnGold">
+                  View Details
+                </button>
+                <p class="card-text textSecondary">
+                  A premium selection of fresh seafood including shrimp, salmon,
+                  and calamari, expertly grilled.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card position-relative p-2">
+              <img
+                src="images/GourmetBeefBurger.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body position-relative z-2 flex-column">
+                <h5 class="card-title text-white">Gourmet Beef Burger</h5>
+                <button class="btn ms-auto my-3 d-block btnGold">
+                  View Details
+                </button>
+                <p class="card-text textSecondary">
+                  A thick, juicy beef patty topped with melted cheese and fresh
+                  ingredients in a soft brioche bun.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card position-relative p-2">
+              <img
+                src="images/WoodFiredPizza.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body position-relative z-2 flex-column">
+                <h5 class="card-title text-white">Wood-Fired Pizza</h5>
+                <button class="btn ms-auto my-3 d-block btnGold">
+                  View Details
+                </button>
+                <p class="card-text textSecondary">
+                  Authentic wood-fired pizza with melted mozzarella, fresh
+                  basil, and a crispy thin crust.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card position-relative p-2">
+              <img
+                src="images/PremiumChickenShawarmaPlate.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body position-relative z-2 flex-column">
+                <h5 class="card-title text-white">
+                  Premium Chicken Shawarmxt-white
+                </h5>
+                <button class="btn ms-auto my-3 d-block btnGold">
+                  View Details
+                </button>
+                <p class="card-text textSecondary">
+                  Tender marinated chicken shawarma served with rice, garlic
+                  sauce, and fresh salad.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card position-relative p-2">
+              <img
+                src="images/PremiumSushiPlatter.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body position-relative z-2 flex-column">
+                <h5 class="card-title text-white">Premium Sushi Platter</h5>
+                <button class="btn ms-auto my-3 d-block btnGold">
+                  View Details
+                </button>
+                <p class="card-text textSecondary">
+                  A refined selection of fresh sushi rolls and nigiri prepared
+                  with precision and balance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card position-relative p-2">
+              <img
+                src="images/ChocolateLavaCheesecake.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body position-relative z-2 flex-column">
+                <h5 class="card-title text-white">
+                  Chocolate Lava Chext-white
+                </h5>
+                <button class="btn ms-auto my-3 d-block btnGold">
+                  View Details
+                </button>
+                <p class="card-text textSecondary">
+                  Rich chocolate cheesecake with a warm molten center, finished
+                  with elegant chocolate drizzle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="background">
+      <div></div>
+    </section>
+    <hr />
+    <section class="team my-5">
+      <div class="fst-italic text-center fs-1 mb-3">
+        <h2 class="text-white">Our Team</h2>
+      </div>
+      <div class="container">
+        <div class="row d-flex justify-content-between g-3 g-md-5 py-4 px-xl-5">
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card rounded-4 overflow-hidden mx-auto border borderLight"
+            >
+              <img
+                src="images/chef.png"
+                class="card-img img-fluid h-100"
+                alt="..."
+              />
+              <div class="card-img-overlay d-flex flex-column">
+                <h5 class="card-title fst-italic fs-6 textSecondary">
+                  We’re proud of our dedicated team.
+                </h5>
+                <span class="d-inline-block text-white"
+                  ><i class="fa-regular fa-clock"></i> Head Chef • Since 2022
+                </span>
+                <div class="overflow-hidden mt-auto mb-2 mb-lg-1 clipImg">
+                  <img src="images/chef.png" class="w-100" alt="..." />
+                </div>
+                <p class="card-text mb-1 textSecondary">Mr. Ahmed Hassan</p>
+                <p class="card-text secondaryColor fw-bolder">Chef</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card rounded-4 overflow-hidden mx-auto border borderLight"
+            >
+              <img
+                src="images/waiter.png"
+                class="card-img img-fluid h-100"
+                alt="..."
+              />
+              <div class="card-img-overlay d-flex flex-column">
+                <h5 class="card-title fst-italic fs-6 textSecondary">
+                  We’re proud of our dedicated team.
+                </h5>
+                <span class="d-inline-block text-white"
+                  ><i class="fa-regular fa-clock"></i> Senior Waiter • Since
+                  2023
+                </span>
+                <div class="overflow-hidden mt-auto mb-2 mb-lg-1 clipImg">
+                  <img src="images/waiter.png" class="w-100" alt="..." />
+                </div>
+                <p class="card-text mb-1 textSecondary">Mr. Omar El-Sayed</p>
+                <p class="card-text secondaryColor fw-bolder">Waiter</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card rounded-4 overflow-hidden mx-auto border borderLight"
+            >
+              <img
+                src="images/manager.png"
+                class="card-img img-fluid h-100"
+                alt="..."
+              />
+              <div class="card-img-overlay d-flex flex-column">
+                <h5 class="card-title fst-italic fs-6 textSecondary">
+                  We’re proud of our dedicated team.
+                </h5>
+                <span class="d-inline-block text-white"
+                  ><i class="fa-regular fa-clock"></i> Manager • Since 2021
+                </span>
+                <div class="overflow-hidden mt-auto mb-2 mb-lg-1 clipImg">
+                  <img src="images/manager.png" class="w-100" alt="..." />
+                </div>
+                <p class="card-text mb-1 textSecondary">Mr. Mohamed Adel</p>
+                <p class="card-text secondaryColor fw-bolder">Manage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news my-5">
+      <h2 class="text-center text-white">News</h2>
+      <div class="container-fluid container-xl px-md-3 px-xl-5 mt-4">
+        <div class="card mb-3 w-100">
+          <div class="row g-0 h-100">
+            <div class="col-md-8 order-2 order-md-1">
+              <div class="card-body h-100 d-flex flex-column">
+                <h3 class="card-title fst-italic text-white">
+                  Smoked Gold Steak
+                </h3>
+                <span class="pb-2 mb-3 d-inline-block textSecondary"
+                  >• April 2024</span
+                >
+                <p class="card-text textSecondary">
+                  A carefully selected premium cut of beef, slow-smoked over
+                  natural wood to gradually develop deep, layered flavors that
+                  unfold with every bite. The smoking process enhances the
+                  natural richness of the meat while preserving its tenderness
+                  and juiciness. Finished with a refined golden butter glaze
+                  infused with fresh herbs, this dish delivers a bold yet
+                  balanced profile that reflects precision, patience, and
+                  craftsmanship. Designed for guests who appreciate depth,
+                  texture, and an elevated fine-dining experience, this steak
+                  represents the heart of our culinary philosophy.
+                </p>
+                <div class="mt-auto mb-1">
+                  <a href="#" class="btn btnGold">View Dish</a>
+                  <a href="#" class="btn btnGold">Ingredients</a>
+                  <a href="#" class="btn btnBorderGold">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 overflow-hidden order-1 d-md-none d-block">
+              <img
+                src="images/SmokedGoldSteak.jpeg"
+                class="img-fluid rounded-top h-100"
+                alt="Generative AI"
+              />
+            </div>
+            <div
+              class="col-md-4 clip1 overflow-hidden order-2 d-none d-md-block"
+            >
+              <img
+                src="images/SmokedGoldSteak.jpeg"
+                class="img-fluid rounded-end h-100"
+                alt="Generative AI"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 w-100">
+          <div class="row g-0 h-100">
+            <div class="col-md-8 order-2">
+              <div class="card-body h-100 d-flex flex-column">
+                <h3 class="card-title fst-italic text-white">
+                  Midnight Truffle Pasta
+                </h3>
+                <span class="pb-2 mb-3 d-inline-block textSecondary"
+                  >• June 2024</span
+                >
+                <p class="card-text textSecondary">
+                  This dish brings together silky pasta and a slow-simmered
+                  cream sauce infused with premium black truffle essence,
+                  creating an aroma that is rich, earthy, and unmistakably
+                  refined. Each element is carefully layered to ensure harmony
+                  between flavor and texture, finished with aged parmesan to add
+                  depth and complexity. Inspired by late-night gourmet dining,
+                  this pasta is crafted for those who value subtle luxury,
+                  smooth finishes, and a dish that reveals its character
+                  gradually.
+                </p>
+                <div class="mt-auto mb-1">
+                  <a href="#" class="btn btnGold">View Dish</a>
+                  <a href="#" class="btn btnGold">Ingredients</a>
+                  <a href="#" class="btn btnBorderGold">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 overflow-hidden order-1 d-block d-md-none">
+              <img
+                src="images/MidnightTrufflePasta.jpeg"
+                class="img-fluid rounded-top h-100"
+                alt="Agent AI"
+              />
+            </div>
+            <div
+              class="col-md-4 clip2 overflow-hidden order-1 d-none d-md-block"
+            >
+              <img
+                src="images/MidnightTrufflePasta.jpeg"
+                class="img-fluid rounded-start h-100"
+                alt="Agent AI"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 w-100">
+          <div class="row g-0 h-100">
+            <div class="col-md-8 order-2 order-md-1">
+              <div class="card-body h-100 d-flex flex-column">
+                <h3 class="card-title fst-italic text-white">
+                  Ocean Ember Salmon
+                </h3>
+                <span class="pb-2 mb-3 d-inline-block textSecondary"
+                  >• August 2024</span
+                >
+                <p class="card-text textSecondary">
+                  This dish brings together silky pasta and a slow-simmered
+                  cream sauce infused with premium black truffle essence,
+                  creating an aroma that is rich, earthy, and unmistakably
+                  refined. Each element is carefully layered to ensure harmony
+                  between flavor and texture, finished with aged parmesan to add
+                  depth and complexity. Inspired by late-night gourmet dining,
+                  this pasta is crafted for those who value subtle luxury,
+                  smooth finishes, and a dish that reveals its character
+                  gradually.
+                </p>
+                <div class="mt-auto mb-1">
+                  <a href="#" class="btn btnGold">View Dish</a>
+                  <a href="#" class="btn btnGold">Ingredients</a>
+                  <a href="#" class="btn btnBorderGold">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 overflow-hidden order-1 d-block d-md-none">
+              <img
+                src="images/OceanEmberSalmon.jpeg"
+                class="img-fluid rounded-top h-100"
+                alt="MultiModel AI"
+              />
+            </div>
+            <div
+              class="col-md-4 clip1 overflow-hidden order-2 d-none d-md-block"
+            >
+              <img
+                src="images/OceanEmberSalmon.jpeg"
+                class="img-fluid rounded-end h-100"
+                alt="MultiModel AI"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 w-100">
+          <div class="row g-0 h-100">
+            <div class="col-md-8 order-2">
+              <div class="card-body h-100 d-flex flex-column">
+                <h3 class="card-title fst-italic text-white">
+                  Velvet Eclipse Dessert
+                </h3>
+                <span class="pb-2 mb-3 d-inline-block textSecondary"
+                  >• October 2024</span
+                >
+                <p class="card-text textSecondary">
+                  An indulgent dessert crafted to leave a lasting impression,
+                  featuring a soft molten chocolate center enveloped in a
+                  smooth, velvet-textured exterior. The delicate cocoa glaze
+                  adds richness while enhancing the visual elegance of the
+                  plate. Designed to close the dining journey on a sophisticated
+                  note, this dessert balances intensity and finesse, offering a
+                  refined sweetness that lingers without overwhelming the
+                  palate.
+                </p>
+                <div class="mt-auto mb-1">
+                  <a href="#" class="btn btnGold">View Dish</a>
+                  <a href="#" class="btn btnGold">Ingredients</a>
+                  <a href="#" class="btn btnBorderGold">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 overflow-hidden order-1 d-block d-md-none">
+              <img
+                src="images/VelvetEclipseDessert.jpeg"
+                class="img-fluid rounded-top h-100"
+                alt="Neuro AI"
+              />
+            </div>
+            <div
+              class="col-md-4 clip2 overflow-hidden order-1 d-none d-md-block"
+            >
+              <img
+                src="images/VelvetEclipseDessert.jpeg"
+                class="img-fluid rounded-start h-100"
+                alt="Neuro AI"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe my-5">
+      <div class="container">
+        <div class="row d-flex justify-content-evenly g-3 g-md-5 py-4 px-xl-5">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="border border-1 borderLight py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
+            >
+              <h3 class="fs-5 text-white">Subscribe Now</h3>
+              <img
+                src="images/whatsapp.png"
+                alt="..."
+                class="my-4 w-50 rounded-5"
+              />
+              <a href="#" class="secondaryColor fs-5">Link</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="border border-1 borderLight py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
+            >
+              <h3 class="fs-5 text-white">Subscribe Now</h3>
+              <img
+                src="images/instagram.png"
+                alt="..."
+                class="my-4 w-50 rounded-5"
+              />
+              <a href="#" class="secondaryColor fs-5">Link</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="border border-1 borderLight py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
+            >
+              <h3 class="fs-5 text-white">Subscribe Now</h3>
+              <img
+                src="images/linkedin.png"
+                alt="..."
+                class="my-4 w-50 rounded-5"
+              />
+              <a href="#" class="secondaryColor fs-5">Link</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="border border-1 borderLight py-4 sectionBgColor d-flex flex-column align-items-center rounded-3"
+            >
+              <h3 class="fs-5 text-white">Subscribe Now</h3>
+              <img
+                src="images/twitter.png"
+                alt="..."
+                class="my-4 w-50 rounded-5"
+              />
+              <a href="#" class="secondaryColor fs-5">Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-4">
+      <hr />
+      <div class="container-fluid container-lg text-center">
+        <div class="row d-none d-md-flex">
+          <div class="col-md-4">
+            <div
+              class="border borderLight sectionBgColor py-4 rounded-2 w-50 mx-auto"
+            >
+              <img src="images/location.png" style="width: 100px" alt="" />
+              <h3 class="fs-5 mt-2 secondaryColor">Location</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="border borderLight sectionBgColor py-4 rounded-2 w-50 mx-auto"
+            >
+              <img src="images/phone.png" style="width: 100px" alt="" />
+              <h3 class="fs-5 mt-2 secondaryColor">Contact</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="border borderLight sectionBgColor py-4 rounded-2 w-50 mx-auto"
+            >
+              <img src="images/clock.png" style="width: 100px" alt="" />
+              <h3 class="fs-5 mt-2 secondaryColor">Opening Hours</h3>
+            </div>
+          </div>
+        </div>
+        <hr class="d-none d-md-block" />
+        <div class="row lh-lg d-none d-md-flex">
+          <div class="col-md-4">
+            <ul class="list-unstyled textSecondary">
+              <li>Downtown Street</li>
+              <li>Cairo, Egypt</li>
+              <li>Near City Center</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled textSecondary">
+              <li>+20 123 456 789</li>
+              <li>WhatsApp Available</li>
+              <li>info@restaurant.com</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled textSecondary">
+              <li>Daily</li>
+              <li>10:00 AM</li>
+              <li>12:00 AM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row d-block d-md-none px-4">
+          <div>
+            <img src="images/location.png" style="width: 130px" alt="" />
+            <h3 class="fs-5 mt-2 secondaryColor">Location</h3>
+            <ul class="list-unstyled lh-lg border-bottom borderLight py-3">
+              <li class="textSecondary">Downtown Street</li>
+              <li class="textSecondary">Cairo, Egypt</li>
+              <li class="textSecondary">Near City Center</li>
+            </ul>
+          </div>
+          <div>
+            <img src="images/phone.png" style="width: 130px" alt="" />
+            <h3 class="fs-5 mt-2 secondaryColor">Contact</h3>
+            <ul class="list-unstyled lh-lg border-bottom borderLight py-3">
+              <li class="textSecondary">+20 123 456 789</li>
+              <li class="textSecondary">WhatsApp Available</li>
+              <li class="textSecondary">info@restaurant.com</li>
+            </ul>
+          </div>
+          <div>
+            <img src="images/clock.png" style="width: 130px" alt="" />
+            <h3 class="fs-5 mt-2 secondaryColor">Opening Hours</h3>
+            <ul class="list-unstyled lh-lg">
+              <li class="textSecondary">Daily</li>
+              <li class="textSecondary">10:00 AM</li>
+              <li class="textSecondary">12:00 AM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="text-center text-white">
+        &copy;2025 FoodExpress. All Rights Reserved. Designed By Eng/ Mohamed
+        Haitham
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
